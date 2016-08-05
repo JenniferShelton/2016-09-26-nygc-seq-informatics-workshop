@@ -1,18 +1,18 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "New York Genome Center"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "101 Avenue of the Americas"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "New York Genome Center: Sequencing Informatics Workshop"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "101 Ave of the Americas, New York, NY 10013"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for host, lead instructor, or whoever else is handling questions
+latlng: "40.723444,-74.005169"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "Sept 26-30, 2016"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-09-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2016-09-30        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Jennifer M Shelton"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["David Lin"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "jshelton@nygenome.org"      # contact email address for host, lead instructor, or whoever else is handling questions
 etherpad:             # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -61,14 +61,19 @@ Software Carpentry staff may need to know in your email.</h4>
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
+  This hands-on portion of the workshop will cover basic
   concepts and tools, including program design, version control, data
   management, and task automation.  Participants will be encouraged to
   help one another and to apply what they have learned to their own
   research problems.
+  
+  This workshop material was adapted from Software Carpentry's workshop 
+  material. Learn more about Software Carpentry below.
+  
+  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
+  is to help scientists and engineers get more research done in less
+  time and with less pain by teaching them basic lab skills for
+  scientific computing.
 </p>
 <p align="center">
   <em>
@@ -88,7 +93,7 @@ Software Carpentry staff may need to know in your email.</h4>
   <strong>Who:</strong>
   The course is aimed at graduate students and other researchers.
   <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+    be presented at this portion of the workshop.</strong>
 </p>
 
 <!--
@@ -118,9 +123,15 @@ Software Carpentry staff may need to know in your email.</h4>
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
+  on. 
+  
+  If necessary we will install needed software on your laptop at the workshop. 
+  Although this will not be the case in most cases if you can install 
+  nomachine durring the workshop.
+  If nomachine installation fails a few specific software packages will be installed during the workshop (listed
+  <a href="#setup">below</a>). 
+  
+  Participants are also required to abide by Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
@@ -172,11 +183,12 @@ Software Carpentry staff may need to know in your email.</h4>
 <h2 id="schedule">Schedule</h2>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
+<!--
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-
+-->
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
@@ -184,18 +196,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>13:00</td>  <td>Building programs with R</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -258,6 +259,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_github_io}}/shell-novice/reference/">Reference...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3 id="syllabus-python">Programming in Python</h3>
     <ul>
@@ -271,7 +273,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_github_io}}/python-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
-  <!--
+  -->
   <div class="col-md-6">
     <h3 id="syllabus-r">Programming in R</h3>
     <ul>
@@ -283,7 +285,6 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_github_io}}/r-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
-  -->
   <!--
   <div class="col-md-6">
     <h3 id="syllabus-matlab">Programming in MATLAB</h3>
@@ -298,7 +299,7 @@ Software Carpentry staff may need to know in your email.</h4>
    </div>
    -->
 </div>
-
+<!--
 <div class="row">
   <div class="col-md-6">
     <h3 id="syllabus-git">Version Control with Git</h3>
@@ -329,7 +330,7 @@ Software Carpentry staff may need to know in your email.</h4>
     </ul>
   </div>
 </div>
-
+-->
 <hr/>
 
 <!--
@@ -446,9 +447,10 @@ Software Carpentry staff may need to know in your email.</h4>
     </div>
   </div>
 </div> <!-- End of 'shell' section. -->
-
+<!--
 <div id="git"> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
+  <!--
   <h3>Git</h3>
   <p>
     Git is a version control system that lets you track who made changes
