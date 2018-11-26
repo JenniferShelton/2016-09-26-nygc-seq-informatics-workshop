@@ -6,14 +6,14 @@ address: "101 Ave of the Americas, New York, NY 10013"      # full street addres
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "40.723444,-74.005169"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "Sept 26-30, 2016"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Nov 25-29, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2016-09-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2016-09-30        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+startdate: 2018-11-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2018-11-29        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Jennifer M Shelton"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["David Lin"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: []     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "jshelton@nygenome.org"      # contact email address for host, lead instructor, or whoever else is handling questions
-etherpad:             # optional: URL for the workshop Etherpad if there is one
+etherpad: "https://etherpad.wikimedia.org/p/NYGC_Sequence_Informatics_Workshop" # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -117,12 +117,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. 
+  <strong>Requirements for setting up exercises after the workshop:</strong> Participants must bring a laptop with a
+  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) To the workshop. After the workshop you may 
+  also use Software carpentry lessons to continue to pratice. You will need a computer that you have administrative 
+  privileges on if you find you need to install software packages to find a terminal or use R.
   
-  Before the workshop install needed software on your laptop. 
-  Follow the instructions to install specific software packages (listed
+  For independent practice follow the instructions to install specific software packages (listed
   <a href="#setup">below</a>). 
   
   Participants are also required to abide by Software Carpentry's
@@ -283,7 +283,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
+  To use Software Carpentry workshop material after the workshop, you will need
   access to the software described below. In addition, you will
   need an up-to-date web browser.
 </p>
@@ -446,42 +446,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </div>
 </div> <!-- End of 'editor' section. -->
 
-<div id="NoMachine"> <!-- Start of 'NoMachine' section. -->
-  <h3>No Machine</h3>
-
-  <p>
-    We will use nomachine to run IGV.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="NoMachine-windows">Windows</h4>
-      <p>
-        To install it,
-        download the <a href="http://download.nomachine.com/download/5.1/Windows/nomachine_5.1.44_1.exe">Windows installer</a>
-        and click on, download and save the EXE file.
-        Double click on the icon of the NoMachine executable: the Setup Wizard will take you through the installation.
-        When requested, provide your administrative credentials to authorize the installation..
-        <strong>This installer requires an active internet connection.</strong>
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="NoMachine-macosx">Mac OS X</h4>
-      <p>
-        download the <a href="http://download.nomachine.com/download/5.1/MacOSX/nomachine_5.1.44_1.dmg">Mac installer</a>
-        Click on, download and save the DMG file.
-        Double-click on the Disk Image to open it and double-click on the NoMachine program icon: the Installer will take you through the installation.
-        When requested, provide your administrative credentials to authorize the installation.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="NoMachine-linux">Linux</h4>
-      <p>
-        download the <a href="https://www.nomachine.com/download/linux&id=1">Linux installer</a>
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'NoMachine' section. -->
 
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
